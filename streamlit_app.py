@@ -5,6 +5,7 @@ from PIL import Image
 
 def analyze_home_image(image):
     # Convert image to grayscale for basic analysis
+    # I am adding this random comment, does the branch thing work?
     gray = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2GRAY)
     edges = cv2.Canny(gray, 100, 200)
     
